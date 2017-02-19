@@ -1,0 +1,20 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="static/styles/styles.css" />
+</head>
+
+<h1 class="header">My movies</h1>
+
+<form action="/movie" method="POST">
+  Name: <input name="name" />
+  Genre: <input name="genre" />
+  <input type="submit" value="Submit" />
+</form>
+<br>
+<br>
+<form action="{{ url_for('search') }}" method="GET">
+	<h3>Search</h3>
+	<input type="text" name="name" />
+	<input type="submit" />
+</form>
+
+<!-- <a id="friends-list" href="/friends">Friends List</a> -->
